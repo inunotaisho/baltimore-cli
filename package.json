@@ -3,18 +3,18 @@
   "version": "0.13.0",
   "description": "A command line interface for working with PlatypusTS projects.",
   "author": "Platypi <support@platypi.io>",
-  "homepage": "https://platypi.io",
+  "homepage": "https://baltcli.io",
   "main": "src/index.js",
   "preferGlobal": true,
   "bin": {
-    "plat": "bin/platypi"
+    "balt": "bin/baltimore"
   },
   "engines": {
     "node": ">= 0.12.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Platypi/platypi-cli.git"
+    "url": "https://github.com/inunotaisho26/baltimore-cli.git"
   },
   "keywords": [
     "platypi",
@@ -24,7 +24,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Platypi/platypi-cli/issues"
+    "url": "https://github.com/inunotaisho26/baltimore-cli/issues"
   },
   "dependencies": {
     "chalk": "^1.1.0",

@@ -2,12 +2,12 @@
 'use strict';
 
 // Provide a title to the process in `ps`
-process.title = 'platypi';
+process.title = 'baltimore';
 
 var resolve = require('resolve');
 var exit = require('exit');
 
-resolve('platypi-cli', {
+resolve('baltimore-cli', {
   basedir: process.cwd()
 }, function (error, localCli) {
   var cli;

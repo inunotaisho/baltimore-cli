@@ -1,11 +1,13 @@
-[![npm version](https://badge.fury.io/js/platypi-cli.svg)](http://badge.fury.io/js/platypi-cli)
-[![Downloads](http://img.shields.io/npm/dm/platypi-cli.svg)](https://npmjs.org/package/platypi-cli)
-[![Dependency Status](https://david-dm.org/Platypi/platypi-cli.svg)](https://david-dm.org/Platypi/platypus)
-[![devDependency Status](https://david-dm.org/Platypi/platypi-cli/dev-status.svg)](https://david-dm.org/Platypi/platypi-cli#info=devDependencies)
+# Baltimore CLI
 
-# Platypi CLI
+The the Baltimore CLI is based on the Platypi CLI which originates from Birmingham, Alabama. Baltimore CLI is the primary way to create and manage monile or desktop apps using various frontend and backend frameworks. 
 
-The Platypi CLI is the primary way to create and manage Platypi apps. It can be used to create new projects as well as add different components (models, repositories, services, injectables, and controls) to the app.
+The Baltimore CLI allows a developer to use 1 of 4 frontend frameworks. Platypi, as built by the original designers and homage to its creators. React, as it is one of the more popular framework in Baltimore, Maryland. AngularJS, as it is the best beginner framework and finally Angular as it planned to replace AngularJS and it removes the digest cycle.
+
+The Baltimore CLI also allows for 1 of 5 popular backend frameworks. The first is Ruby on Rails, as it is used widly in Baltimore. The second and most obvious is ExpressJS.
+
+
+ It can be used to create new projects as well as add different components (models, repositories, services, injectables, and controls) to the app.
 
 ## Installation
 
@@ -13,25 +15,25 @@ Use `npm` to install this package.
 
 Globally (preferred)
 ```shell
-npm install platypi-cli -g
+npm install baltimore-cli -g
 ```
 
 or, Locally
 ```shell
-npm install platypi-cli --save-dev
+npm install baltimore-cli --save-dev
 ```
 
 ## Usage
 
-All commands are run with `plat <command>`. You can run `plat <command> -h` for further help. The help menus cascade.
+All commands are run with `balt <command>`. You can run `balt <command> -h` for further help. The help menus cascade.
 
-So `plat create app -h` will show you a different help menu than `plat create -h` or `plat create viewcontrol -h`.
+So `balt create app -h` will show you a different help menu than `balt create -h` or `balt create viewcontrol -h`.
 
 ### create
 
 Creates a new project or component in the specified directory. Walks you through a series of prompts to determine the project specifications.
 
-> **NOTE:** You can use `plat c` as an alias for `plat create`
+> **NOTE:** You can use `balt c` as an alias for `balt create`
 
 #### Examples
 
@@ -42,22 +44,22 @@ plat create
 
 Create a new project MyProject in its own directory
 ```shell
-plat create -n MyProject --dir myproject
+balt create -n MyProject --dir myproject
 ```
 
 Create a ViewControl component in the project-specified default location for viewcontrols (e.g. ./app/viewcontrols/home)
 ```shell
-plat create viewcontrol -n Home
+balt create viewcontrol -n Home
 ```
 
 Create a ViewControl component in ./app/viewcontrols/posts/list
 ```shell
-plat create viewcontrol -n List --dir posts/
+balt create viewcontrol -n List --dir posts/
 ```
 
 Create a ViewControl component that extends another ViewControl
 ```shell
-plat create viewcontrol -n PostsByTag --extends ../list/list.vc
+balt create viewcontrol -n PostsByTag --extends ../list/list.vc
 ```
 
 > **NOTE:** When extending components, the exact path you specify will be used as the import path. The path specified must have the component listed as its default export.
@@ -84,7 +86,7 @@ injectable       | inj
 
 ### cordova
 
-You can run `plat cordova` from anywhere in your project, and it will run `cordova` commands from within the scope of the `/cordova` folder of your project.
+You can run `balt cordova` from anywhere in your project, and it will run `cordova` commands from within the scope of the `/cordova` folder of your project.
 
 #### Examples
 
@@ -97,7 +99,7 @@ cordova run android --device
 Run your cordova project on an Android device **from the / folder** of your project.
 
 ```shell
-plat cordova run android --device
+balt cordova run android --device
 ```
 
-This will work with any cordova command. You can type `plat cordova -h` for more information.
+This will work with any cordova command. You can type `balt cordova -h` for more information.
