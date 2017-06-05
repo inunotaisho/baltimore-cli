@@ -39,7 +39,7 @@ Creates a new project or component in the specified directory. Walks you through
 
 Create a new project in the current directory:
 ```shell
-plat create
+balt create
 ```
 
 Create a new project MyProject in its own directory
